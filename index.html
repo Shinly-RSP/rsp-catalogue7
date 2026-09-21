@@ -889,7 +889,9 @@ footer{scroll-snap-align:end}
 #m-summary>.pwrap{width:100%}
 /* keep each snapped screen's content centered in the clear area below the fixed nav */
 @media(min-width:901px){
+  body{zoom:.8}
   #m-summary,.pscreen,#groups,#integrations,#lifecycle,#help{box-sizing:border-box;padding-top:var(--navh)!important;padding-bottom:0!important}
+  .hero,#m-summary,.pscreen,#groups,#integrations,#lifecycle,#help{min-height:125vh}
 }
 @media(max-width:900px){html{scroll-snap-type:none}#m-summary{min-height:auto}}
 .phase{background:#fff;border:1px solid var(--border-default);border-radius:var(--r-l);padding:22px;box-shadow:var(--el-1);position:relative;overflow:hidden;min-height:328px;display:flex;flex-direction:column}
